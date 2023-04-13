@@ -1,5 +1,4 @@
 const chromium = require('chrome-aws-lambda');
-const fs = require('fs');
 const express = require('express');
 const path = require('path')
 const app = express();
@@ -75,9 +74,7 @@ app.post('/pdf-generator', async (req, res) => {
     res.send(pdfUrl)
 });
 
-
-
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
-module.exports = app
+module.exports = app;
