@@ -3,11 +3,11 @@
     "name": "nodejs-generate-pdf",
     "builds": [
         {
-            "src": "index.js",
+            "src": "./index.js",
             "use": "@vercel/node"
         },
         {
-            "src": "files/**",
+            "src": "./files/**",
             "use": "@vercel/static"
         }
     ],
